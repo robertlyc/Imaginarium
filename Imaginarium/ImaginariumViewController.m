@@ -8,22 +8,37 @@
 
 #import "ImaginariumViewController.h"
 
-@interface ImaginariumViewController ()
-
+@interface ImaginariumViewController () <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 
 @implementation ImaginariumViewController
+@synthesize imageView = _imageView;
+@synthesize scrollView = _scrollView;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.scrollView.delegate = self;
+    self.scrollView.contentSize = self.imageView.image.size;
+    self.imageView.frame = CGRectMake(0, 0, self.imageView.image.size.width, self.imageView.image.size.height);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return self.imageView;
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    } else {
+        return YES;
+    }
+}
+
+- (void)viewDidUnload {
+    [self setImageView:nil];
+    [self setScrollView:nil];
+    [super viewDidUnload];
+}
 @end

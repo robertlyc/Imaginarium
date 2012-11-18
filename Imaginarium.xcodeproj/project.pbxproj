@@ -19,6 +19,7 @@
 		E131287F165893B6007E5389 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E131287D165893B6007E5389 /* MainStoryboard_iPhone.storyboard */; };
 		E1312882165893B6007E5389 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1312880165893B6007E5389 /* MainStoryboard_iPad.storyboard */; };
 		E1312885165893B6007E5389 /* ImaginariumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1312884165893B6007E5389 /* ImaginariumViewController.m */; };
+		E131288C1658972D007E5389 /* Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E131288B1658972D007E5389 /* Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E1312881165893B6007E5389 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		E1312883165893B6007E5389 /* ImaginariumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImaginariumViewController.h; sourceTree = "<group>"; };
 		E1312884165893B6007E5389 /* ImaginariumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumViewController.m; sourceTree = "<group>"; };
+		E131288B1658972D007E5389 /* Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				E1312880165893B6007E5389 /* MainStoryboard_iPad.storyboard */,
 				E1312883165893B6007E5389 /* ImaginariumViewController.h */,
 				E1312884165893B6007E5389 /* ImaginariumViewController.m */,
+				E131288D16589733007E5389 /* pics */,
 				E131286C165893B6007E5389 /* Supporting Files */,
 			);
 			path = Imaginarium;
@@ -108,6 +111,14 @@
 				E131287B165893B6007E5389 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E131288D16589733007E5389 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				E131288B1658972D007E5389 /* Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg */,
+			);
+			name = pics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				E131287C165893B6007E5389 /* Default-568h@2x.png in Resources */,
 				E131287F165893B6007E5389 /* MainStoryboard_iPhone.storyboard in Resources */,
 				E1312882165893B6007E5389 /* MainStoryboard_iPad.storyboard in Resources */,
+				E131288C1658972D007E5389 /* Washington_Crossing_the_Delaware_by_Emanuel_Leutze_MMA-NYC_1851.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
 				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Imaginarium/Imaginarium-Prefix.pch";
 				INFOPLIST_FILE = "Imaginarium/Imaginarium-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
